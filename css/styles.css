@@ -190,7 +190,7 @@ img {
 /* Друга секція */
 .features-section {
     padding: 120px 0;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     color: #2e2f42;
 }
 
@@ -324,7 +324,7 @@ img {
 .portfolio-section {
     padding-top: 120px;
     padding-bottom: 120px;
-    background-color: #f4f4fd;
+    background-color: #ffffff;
   }
   
   .portfolio-section .project-list .project-card {
