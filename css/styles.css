@@ -46,6 +46,12 @@ img {
     display: block;
 }
 
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .site-header {
     background-color: #fff;
     border-bottom: 1px solid #e7e9fc; 
