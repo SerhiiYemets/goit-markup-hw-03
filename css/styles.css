@@ -7,33 +7,34 @@ body {
     background-color: #ffffff;
 }
 
-/* Общий контейнер */
-.container {
-    max-width: 1240px;
-    margin: 0 auto;
-    padding: 0 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
-    flex-direction: row;
+.site-header {
+    border-bottom: 1px solid #e7e9fc;
+    background-color: #ffffff;
 }
 
-header {
-    background-color: #fff;
-    padding: 24px 0;
-    border-bottom: 1px solid #e5e5e5; 
+.container {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 ul {
-    list-style: none;  
- }
- /* Навигация */
- .main-nav {
-     display: flex;
-     align-items: center;
-     gap: 40px; }
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
-/* === ЛОГОТИП === */
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
 .site-logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -43,22 +44,21 @@ ul {
     text-transform: uppercase;
     color: #4d5ae5;
     text-decoration: none;
+    margin-right: 76px;
 }
 
 .logo-span {
     color: #2e2f42;
 }
 
-/* === НАВІГАЦІЯ === */
 .nav-list {
     display: flex;
-    gap: 30px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    gap: 40px;
 }
 
 .nav-link {
+    display: block;
+    padding: 24px 0;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -73,17 +73,13 @@ ul {
     color: #404bbf;
 }
 
-/* === КОНТАКТИ === */
 .contact-address {
     font-style: normal;
 }
 
 .contact-list {
     display: flex;
-    gap: 30px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    gap: 40px;
 }
 
 .contact-link {
@@ -97,8 +93,7 @@ ul {
 
 .contact-link:hover,
 .contact-link:focus {
-    color: #404bbf;
-}
+    color: #404bbf; }
 
 /* === СЕКЦІЯ === */
 .hero-image {
@@ -156,6 +151,7 @@ ul {
     color: #2e2f42; 
     
 }
+
 
 .features-title {
     font-size: 36px;
@@ -240,7 +236,7 @@ ul {
 
 /* Фото */
 .team-card img {
-    display: block;
+
     width: 100%;
     height: auto;
 }
