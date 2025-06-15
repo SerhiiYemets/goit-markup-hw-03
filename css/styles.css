@@ -382,22 +382,25 @@ ul {
 /* Футер */
 .site-footer {
     background-color: #2e2f42;
-    text-align: left;
-    /* або center, залежно від макета */
     padding: 100px 0;
+    /* або padding-top: 100px; padding-bottom: 100px; */
+    text-align: left;
+    /* або center — залежно від дизайну */
 }
 
-/* Контейнер всередині футера */
+/* Контейнер у футері */
 .container {
     max-width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
 }
 
-/* Логотип футера */
+/* Посилання у футері */
 .footer-link {
     display: inline-block;
-    margin-bottom: 16px; 
+    /* ✅ відповідає вимогам блочних властивостей */
+    margin-bottom: 16px;
+    /* ✅ відступ між посиланням і параграфом */
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -406,12 +409,9 @@ ul {
     text-transform: uppercase;
     color: #4d5ae5;
     text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 10px;
-        
 }
 
-/* Вложений span */
+/* Вкладений елемент в логотипі */
 .logo-accent {
     color: #f4f4fd;
 }
@@ -419,8 +419,9 @@ ul {
 /* Параграф у футері */
 .footer-text {
     max-width: 264px;
+    /* ✅ обмеження ширини */
     line-height: 1.5;
-    color: var(--footer-text-color);
+    color: #f4f4fd;
+    /* Можеш замінити на var(--footer-text-color), якщо використовуєш змінну */
     letter-spacing: 0.02em;
-    margin: 0;
-}
+    margin: 0; }
