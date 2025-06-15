@@ -395,7 +395,7 @@ ul {
 }
 
 /* Логотип футера */
-.footer-logo {
+.footer-link {
     display: inline-block;
     margin-bottom: 16px; 
     font-family: "Raleway", sans-serif;
