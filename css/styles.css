@@ -75,6 +75,8 @@ ul {
     color: #2e2f42;
     text-decoration: none;
     transition: color 0.3s ease;
+    padding: 24px 0;
+    display: block;
 }
 
 .nav-link:hover,
