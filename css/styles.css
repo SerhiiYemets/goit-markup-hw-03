@@ -379,49 +379,26 @@ ul {
   
   
 
-/* Футер */
-.site-footer {
-    background-color: #2e2f42;
-    padding: 100px 0;
-    /* або padding-top: 100px; padding-bottom: 100px; */
-    text-align: left;
-    /* або center — залежно від дизайну */
-}
+  /*footer - start */ 
+  .footer {
+      background-color: #2e2f42;
+      padding-top: 100px;
+      padding-bottom: 100px;
+  }
 
-/* Контейнер у футері */
-.container {
-    max-width: 1158px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
+  .footer .logo {
+      display: inline-block;
+      margin-bottom: 16px;
+  }
 
-/* Посилання у футері */
-.footer-link {
-    display: inline-block;
-    /* ✅ відповідає вимогам блочних властивостей */
-    margin-bottom: 16px;
-    /* ✅ відступ між посиланням і параграфом */
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #4d5ae5;
-    text-decoration: none;
-}
+  .logo-studio-white {
+      color: #f4f4fd;
+  }
 
-/* Вкладений елемент в логотипі */
-.logo-accent {
-    color: #f4f4fd;
-}
-
-/* Параграф у футері */
-.footer-text {
-    max-width: 264px;
-    /* ✅ обмеження ширини */
-    line-height: 1.5;
-    color: #f4f4fd;
-    /* Можеш замінити на var(--footer-text-color), якщо використовуєш змінну */
-    letter-spacing: 0.02em;
-    margin: 0; }
+  .text-light {
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 0.02em;
+      color: #f4f4fd;
+      max-width: 264px; 
+    }
