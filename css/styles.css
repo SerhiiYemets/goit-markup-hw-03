@@ -160,66 +160,64 @@ ul {
     background-color: #404bbf;
 }
 
-/* Секция features */
+/* Друга секція */
 .features-section {
     padding: 120px 0;
     background-color: #f4f4f4;
-    /* Светлый фон */
-    color: #2e2f42; 
-    
+    color: #2e2f42;
 }
 
-
-.features-title {
-    font-size: 36px;
-    text-align: center;
-    margin-bottom: 40px;
-    font-weight: 700;
-    
+/* Прихований заголовок */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    clip-path: inset(100%);
 }
 
-/* Список features */
+/* Контейнер */
+.features-section .container {
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Список */
 .features-list {
-    display: grid;
-    gap: 40px;
+    display: flex;
+    gap: 24px;
     list-style: none;
     padding: 0;
-    margin: 0; 
-    
+    margin: 0;
 }
 
-/* Каждый элемент списка */
-.features-list li {
-    background-color: #ffffff;
-    padding: 30px 20px;
-    transition: transform 0.3s ease;
-    
+/* Елементи списку */
+.features-item {
+    width: calc((100% - 72px) / 4);
 }
 
-/* Заголовки в списке */
+/* Заголовок всередині елемента */
 .feature-heading {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    margin-bottom: 10px;
-    
+    margin-bottom: 8px;
 }
 
-/* Параграфы в списке */
+/* Параграф всередині елемента */
 .feature-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-}
-
-.features-section .container {
-    display: block;
-    padding: 0 15px;
-    max-width: 1158px;
-    margin: 0 auto;
 }
 
 .team-section {
@@ -294,6 +292,8 @@ ul {
 
   /* Секция */
   .portfolio-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
     padding: 32px 16px;
     background-color: #f4f4fd;
     border: 1px solid #e7e9fc;
