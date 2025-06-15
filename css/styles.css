@@ -406,6 +406,9 @@ ul {
     text-transform: uppercase;
     color: #4d5ae5;
     text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+        
 }
 
 /* Вложений span */
@@ -416,7 +419,6 @@ ul {
 /* Параграф у футері */
 .footer-text {
     max-width: 264px;
-    /* ✅ обмеження ширини */
     line-height: 1.5;
     color: var(--footer-text-color);
     letter-spacing: 0.02em;
