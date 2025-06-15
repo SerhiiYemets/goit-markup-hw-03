@@ -22,12 +22,16 @@ body {
 
 header {
     background-color: #fff;
-    padding: 24px 0;
     border-bottom: 1px solid #e7e9fc; 
+    padding-top: 24px;
+    padding-bottom: 24px;
+
 }
+
 img{
     display: block;
 }
+
 ul {
     list-style: none;  
  }
@@ -47,6 +51,7 @@ ul {
     text-transform: uppercase;
     color: #4d5ae5;
     text-decoration: none;
+    margin-right: 76px;
 }
 
 .logo-span {
@@ -108,7 +113,8 @@ ul {
 .hero-image {
     background-color: #2e2f42;
     color: #fff;
-    padding: 120px 0;
+    padding-top: 188px;
+    padding-bottom: 188px;
     text-align: center;
     
 }
@@ -128,7 +134,7 @@ ul {
     letter-spacing: 0.02em;
     color: #ffffff;
     margin-bottom: 30px;
-    max-width: 600px;
+    max-width: 496px;
 }
 
 /* === КНОПКА === */
@@ -145,6 +151,8 @@ ul {
     text-align: center;
     padding: 16px 32px;
     transition: background-color 0.3s ease;
+    min-width: 169px;
+    border-radius: 4px;
 }
 
 .main-button:hover,
