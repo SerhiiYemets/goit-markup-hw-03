@@ -285,10 +285,14 @@ img {
     text-align: center;
 }
 
-.card-content {
-    padding-top: 32px;
-    padding-bottom: 32px;
+.team-card .card-content {
+    padding: 32px 0;
+}
 
+.project-card .card-content {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 
 /* Имя сотрудника */
@@ -324,7 +328,7 @@ img {
   }
   
   .portfolio-section .project-list .project-card {
-      width: calc((100% - 48px) / 3);
+    width: calc((100% - 48px) / 3);
   }
 
   /* Контейнер */
@@ -378,7 +382,7 @@ img {
   }
   
   /* Контент усередині картки */
-  .card-content {
+  .project-card .card-content {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
