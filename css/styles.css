@@ -222,75 +222,64 @@ ul {
 
 .team-section {
     background-color: #f4f4fd;
-    padding: 120px 0;
-  }
-  
-  .team-title {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.team-container {
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.team-title {
     font-size: 36px;
     line-height: 1.11;
-    text-align: center;
     color: #2e2f42;
-    margin-bottom: 72px;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-  }
-  
-  .team-list {
+    margin-bottom: 72px;
+}
+
+.team-list {
     display: flex;
     justify-content: center;
     gap: 24px;
     list-style: none;
-    padding: 0;
     margin: 0;
-  }
-  
-  .team-card {
-    background-color: #fff;
-    border-radius: 0 0 4px 4px;
-    overflow: hidden;
-    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.08),
-                0px 1px 1px rgba(0, 0, 0, 0.16),
-                0px 1px 6px rgba(0, 0, 0, 0.08);
-    width: 264px;
-    
-  }
-  
-  .card-content {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding: 0;
+}
 
-  }
-  
-  .card-name {
+.team-item {
+    background-color: #ffffff;
+    border-radius: 0px 0px 4px 4px;
+    overflow: hidden;
+    box-shadow:
+        0px 2px 1px rgba(0, 0, 0, 0.08),
+        0px 1px 1px rgba(0, 0, 0, 0.16),
+        0px 1px 6px rgba(0, 0, 0, 0.08);
+    flex-basis: calc((100% - 72px) / 4);
+    text-align: center;
+}
+
+.card-content {
+    padding: 32px 0;
+}
+
+.card-name {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     color: #2e2f42;
+    text-align: center;
     margin-bottom: 8px;
-  }
-  
-  .card-position {
+}
+
+.card-position {
     font-size: 16px;
     line-height: 1.5;
     color: #434455;
-  }
-  
-  /* Контейнер */
-  .container {
-    max-width: 1158px;
-    margin: 0 auto;
-    padding: 0 15px;
-  }
-
-  .team-section .container {
-      display: block;
-      /* отменяем flex */
-      padding: 0 15px;
-      max-width: 1158px;
-      margin: 0 auto;
-  }
+    text-align: center;
+}
 
   /* Секція Portfolio */
   .portfolio-section {
