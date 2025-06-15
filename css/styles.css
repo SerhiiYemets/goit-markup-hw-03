@@ -20,7 +20,7 @@ body {
   
 }
 
-header {
+.site-header {
     background-color: #fff;
     border-bottom: 1px solid #e7e9fc; 
     padding-top: 24px;
@@ -290,90 +290,89 @@ ul {
       margin: 0 auto;
   }
 
- /* Секція */
- .section-fourth {
-     padding: 120px 0;
-     background-color: #f4f4fd;
- }
+  /* Секція Portfolio */
+.portfolio-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: #f4f4fd;
+  }
+  
+  .portfolio-section .project-list .project-card {
+      width: calc((100% - 48px) / 3);
+  }
 
- /* Контейнер */
- .container {
-     max-width: 1158px;
-     margin: 0 auto;
-     padding: 0 15px;
- }
+  /* Контейнер */
+  .portfolio-section .container {
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  /* Заголовок */
+  .section-title {
+    font-size: 36px;
+    line-height: 1.11;
+    color: #2e2f42;
+    text-align: center;
+    margin-bottom: 72px;
+    text-align: left; /* або center за потреби */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 
- /* Заголовок */
- .section-title {
-     font-size: 36px;
-     line-height: 1.11;
-     color: #2e2f42;
-     margin-bottom: 72px;
-     text-align: left;
-     /* або center за потребою */
- }
-
- /* Список */
- .app-list {
-     display: flex;
-     flex-wrap: wrap;
-     list-style: none;
-     padding: 0;
-     margin: 0;
-     column-gap: 24px;
-     row-gap: 48px;
- }
-
- /* Пункт списку */
- .app-item {
-     width: calc((100% - 48px) / 3);
-     box-sizing: border-box;
-     margin-right: 24px;
-     margin-bottom: 48px;
- }
-
- /* Відступи для кожного третього пункту - обнуляємо margin-right */
- .app-item:nth-child(3n) {
-     margin-right: 0;
- }
-
- /* Відступи для трьох останніх пунктів - обнуляємо margin-bottom */
- .app-item:nth-last-child(-n+3) {
-     margin-bottom: 0;
- }
-
- /* Контейнер всередині пункту */
- .app-card {
-     padding: 32px 16px;
-     border: 1px solid #e7e9fc;
-     border-top: none;
- }
-
- /* Заголовок у контейнері пункту */
- .app-card-title {
-     font-weight: 500;
-     font-size: 20px;
-     line-height: 1.2;
-     color: #2e2f42;
-     margin-bottom: 8px;
- }
-
- /* Параграф у контейнері пункту */
- .app-card-text {
-     font-size: 16px;
-     line-height: 1.5;
-     color: #434455;
-     margin: 0;
- }
-
- /* Зображення (якщо потрібно) */
- .app-card img {
-     display: block;
-     width: 100%;
-     height: auto;
-     border-radius: 4px;
-     object-fit: cover;
- }
+}
+  
+  /* Список */
+  .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Елемент списку */
+  .project-card {
+    width: calc((100% - 48px) / 3);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Картинка */
+  .project-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    object-fit: cover;
+  }
+  
+  /* Контент усередині картки */
+  .card-content {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+  }
+  
+  /* Заголовок у картці */
+  .card-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #2e2f42;
+    margin-bottom: 8px;
+  }
+  
+  /* Параграф у картці */
+  .card-text {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #434455;
+    margin: 0;
+  }
   
   
 
