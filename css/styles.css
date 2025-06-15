@@ -385,41 +385,25 @@ ul {
   
 
   /* Футер */
-  .site-footer {
+  .footer {
       background-color: #2e2f42;
-      padding: 100px 0;
+      padding-top: 100px;
+      padding-bottom: 100px;
   }
 
-  /* Контейнер всередині футера */
-  .container {
-      max-width: 1158px;
-      margin: 0 auto;
-      padding: 0 15px;
-  }
-
-  /* Посилання (логотип) */
-  .footer-link {
+  .footer .logo {
       display: inline-block;
       margin-bottom: 16px;
-      font-family: "Raleway", sans-serif;
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 1.17;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-      color: #4d5ae5;
-      text-decoration: none;
   }
 
-  /* Вложений span */
-  .logo-accent {
+  .logo-studio-white {
       color: #f4f4fd;
   }
 
-  /* Параграф */
-  .footer-text {
-      max-width: 264px;
+  .text-light {
       font-size: 16px;
       line-height: 1.5;
       letter-spacing: 0.02em;
-      color: #f4f4fd; }
+      color: #f4f4fd;
+      max-width: 264px;
+  }
