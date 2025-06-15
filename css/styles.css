@@ -7,9 +7,31 @@ body {
     background-color: #ffffff;
 }
 
+/* Общий контейнер */
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    flex-direction: row;
+}
+
+header {
+    background-color: #fff;
+    padding: 24px 0;
+    border-bottom: 1px solid #e5e5e5; 
+}
+
 ul {
     list-style: none;  
  }
+ /* Навигация */
+ .main-nav {
+     display: flex;
+     align-items: center;
+     gap: 40px; }
 
 /* === ЛОГОТИП === */
 .site-logo {
@@ -29,8 +51,11 @@ ul {
 
 /* === НАВІГАЦІЯ === */
 .nav-list {
+    display: flex;
+    gap: 30px;
     list-style: none;
     margin: 0;
+    padding: 0;
 }
 
 .nav-link {
@@ -40,6 +65,7 @@ ul {
     letter-spacing: 0.02em;
     color: #2e2f42;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .nav-link:hover,
@@ -53,8 +79,11 @@ ul {
 }
 
 .contact-list {
+    display: flex;
+    gap: 30px;
     list-style: none;
     margin: 0;
+    padding: 0;
 }
 
 .contact-link {
@@ -63,6 +92,7 @@ ul {
     letter-spacing: 0.02em;
     color: #434455;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .contact-link:hover,
@@ -73,7 +103,18 @@ ul {
 /* === СЕКЦІЯ === */
 .hero-image {
     background-color: #2e2f42;
+    color: #fff;
+    padding: 120px 0;
+    text-align: center;
+    
 }
+
+/* Контейнер внутри hero */
+.hero-image .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
 
 /* === ЗАГОЛОВОК === */
 .hero-title {
@@ -82,6 +123,8 @@ ul {
     text-align: center;
     letter-spacing: 0.02em;
     color: #ffffff;
+    margin-bottom: 30px;
+    max-width: 600px;
 }
 
 /* === КНОПКА === */
@@ -96,6 +139,8 @@ ul {
     cursor: pointer;
     border: none;
     text-align: center;
+    padding: 16px 32px;
+    transition: background-color 0.3s ease;
 }
 
 .main-button:hover,
@@ -103,10 +148,39 @@ ul {
     background-color: #404bbf;
 }
 
+/* Секция features */
+.features-section {
+    padding: 120px 0;
+    background-color: #f4f4f4;
+    /* Светлый фон */
+    color: #2e2f42; 
+    
+}
+
 .features-title {
     font-size: 36px;
     text-align: center;
     margin-bottom: 40px;
+    font-weight: 700;
+    
+}
+
+/* Список features */
+.features-list {
+    display: grid;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+    
+}
+
+/* Каждый элемент списка */
+.features-list li {
+    background-color: #ffffff;
+    padding: 30px 20px;
+    transition: transform 0.3s ease;
+    
 }
 
 /* Заголовки в списке */
@@ -116,6 +190,8 @@ ul {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 10px;
+    
 }
 
 /* Параграфы в списке */
@@ -124,10 +200,12 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    
 }
 
 /* Секция */
 .team-section {
+    padding: 120px 0;
     background-color: #f4f4fd;
 }
 
@@ -139,13 +217,42 @@ ul {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
+    margin-bottom: 60px;
+}
+
+/* Список участников */
+.team-list {
+    display: grid;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+    margin: 0; 
 }
 
 /* Елементи списку */
 .team-card {
     background-color: #ffffff;
     text-align: center;
+    overflow: hidden;
+    padding-bottom: 20px;
+    transition: transform 0.3s ease;
 }
+
+/* Фото */
+.team-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Имя участника */
+.feature-heading {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin: 16px 0 8px; }
 
 /* Заголовки (повторно з секції 2) */
 .feature-heading {
