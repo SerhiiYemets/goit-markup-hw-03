@@ -321,6 +321,7 @@ ul {
     margin-left: auto;
     margin-right: auto;
     display: block;
+    padding: 32px 0;
 
 }
   
@@ -382,11 +383,21 @@ ul {
 .site-footer {
     background-color: #2e2f42;
     text-align: left;
-    /* или center — зависит от макета */
+    /* або center, залежно від макета */
+    padding: 100px 0;
 }
 
-/* Логотип */
+/* Контейнер всередині футера */
+.container {
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Логотип футера */
 .footer-logo {
+    display: inline-block;
+    margin-bottom: 16px; 
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -395,16 +406,17 @@ ul {
     text-transform: uppercase;
     color: #4d5ae5;
     text-decoration: none;
-    margin-bottom: 16px;
 }
 
-/* Вложенный span */
+/* Вложений span */
 .logo-accent {
     color: #f4f4fd;
 }
 
-/* Параграф */
+/* Параграф у футері */
 .footer-text {
+    max-width: 264px;
+    /* ✅ обмеження ширини */
     line-height: 1.5;
     color: var(--footer-text-color);
     letter-spacing: 0.02em;
